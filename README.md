@@ -97,7 +97,7 @@ Place originals according to their purpose:
 | `raw/notes/` | Informal working material | Meeting notes, journals, brainstorms |
 | `raw/media/` | Images and text descriptions | PNG/JPEG diagrams, screenshots, captions |
 
-Supported formats are Markdown, plain text, HTML, text-bearing PDF, PNG, and JPEG.
+Supported image extensions are `.png`, `.jpg`, `.jpeg`, and `.pdf` for text-bearing PDF documents. Markdown, plain text, and HTML are also supported. Image normalization can use Tesseract for OCR and creates a sanitized rendition before approved images enter the wiki.
 
 ```bash
 cp /path/to/your/article.md raw/articles/
@@ -115,7 +115,7 @@ For one file:
 Use $wiki-ingest to process raw/articles/article.md. Register and normalize it, search for related pages, prepare and validate a change plan, and show me the diff. Stop before applying it.
 ```
 
-Codex uses deterministic commands such as `source add` and `source normalize`, then AI judgment to organize and summarize meaning.
+The batch workflow begins with one simple rule: **Discover files that are not registered yet**, then classify them before making any plan. Codex uses deterministic commands such as `source add` and `source normalize`, then AI judgment to organize and summarize meaning.
 
 ### 4. Review and apply content
 

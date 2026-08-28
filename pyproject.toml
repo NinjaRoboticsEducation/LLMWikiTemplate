@@ -1,6 +1,6 @@
 [project]
 name = "local-llm-wiki"
-version = "0.2.0"
+version = "0.2.1"
 description = "A local-first, agent-maintained, OKF v0.2 knowledge base template"
 readme = "README.md"
 requires-python = ">=3.11"
